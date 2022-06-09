@@ -31,9 +31,9 @@ public class PermitteeRepresentations {
 
   public final String patientPassport;
 
-  public final LaboratoryProcedure procedure;
+  public final String procedure;
   
-  public final LaboratoryProcedureResult result;
+  public final String result;
   
   public final String serial;
 
@@ -51,8 +51,8 @@ public class PermitteeRepresentations {
     Network network,
     String patientName,
     String patientPassport,
-    LaboratoryProcedure procedure,
-    LaboratoryProcedureResult result,
+    String procedure,
+    String result,
     String serial,
     java.time.Instant time,
     Integer permitteeId,
@@ -133,8 +133,8 @@ public class PermitteeRepresentations {
       network.namespacePrefix + namespaceSuffix,
       patientName,
       patientPassport,
-      procedure.internationalName,
-      result.internationalName,
+      procedure,
+      result,
       serial,
       isoInstantWithMilliseconds.format(time),
       permitteeId + "",
@@ -148,8 +148,8 @@ public class PermitteeRepresentations {
     return String.join("|", new String[]{
       patientName,
       patientPassport,
-      procedure.code,
-      result.code,
+      procedure,
+      result,
       serial,
       time.toEpochMilli() + "",
       permitteeId + "",

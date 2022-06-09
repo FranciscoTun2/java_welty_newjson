@@ -17,7 +17,7 @@ public class Main {
       return;
     }
 
-    if (args.length == 11) {
+    if (args.length == 10) {
         // add new element to args
         args = new String[] {
             args[0],
@@ -65,8 +65,8 @@ public class Main {
       network,
       args[3], // Patient name
       args[4], // Patient passport
-      LaboratoryProcedure.procedureWithCode(args[5]), // Laboratory procedure
-      LaboratoryProcedure.procedureWithCode(args[5]).resultWithCode(args[6]),
+      args[5], // Laboratory procedure
+      LaboratoryProcedure.procedureWithCodeFromJSON(args[6]).resultWithCodeFromJSON(args[6]),
       args[7], // Serial
       Instant.ofEpochMilli(Long.parseLong(args[8])), // Time
       signer.permitteeId, // Permittee ID
@@ -77,8 +77,8 @@ public class Main {
 
     System.err.println("Patient:     " + ConsoleColors.YELLOW + representations.patientName + ConsoleColors.RESET);
     System.err.println("Passport:    " + ConsoleColors.YELLOW + representations.patientPassport + ConsoleColors.RESET);
-    System.err.println("Procedure:   " + ConsoleColors.YELLOW + representations.procedure.code + ConsoleColors.RESET);
-    System.err.println("Result:      " + ConsoleColors.YELLOW + representations.result.code + ConsoleColors.RESET);
+    // System.err.println("Procedure:   " + ConsoleColors.YELLOW + representations.procedure.code + ConsoleColors.RESET);
+    // System.err.println("Result:      " + ConsoleColors.YELLOW + representations.result.code + ConsoleColors.RESET);
     System.err.println("Serial:      " + ConsoleColors.YELLOW + representations.serial + ConsoleColors.RESET);
     System.err.println("Time:        " + ConsoleColors.YELLOW + representations.time.toEpochMilli() + "" + ConsoleColors.RESET);
     System.err.println("jsonPassport:     " + ConsoleColors.YELLOW + representations.jsonPassport + ConsoleColors.RESET);

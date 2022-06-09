@@ -1,4 +1,8 @@
 package io.genobank;
+import org.json.JSONObject;
+import org.json.JSONArray;
+
+
 
 /// @see https://genobank.io/certificates/laboratoryProcedureTaxonomy.json
 public class LaboratoryProcedure {
@@ -46,6 +50,29 @@ public class LaboratoryProcedure {
         return new LaboratoryProcedureResult("C", "COMPLETE");
       default:
         throw new IllegalArgumentException("Only laboratory result N=NEGATIVE, P=POSITIVE and C=COMPLETE are supported in this version");
+    }
+  }
+
+
+  public static LaboratoryProcedure procedureWithCodeFromJSON(String JSONString) throws IllegalArgumentException {
+    try{
+      JSONArray jsonArray = new JSONArray(JSONString);
+      JSONObject json = jsonArray.getJSONObject(0);
+
+      return new LaboratoryProcedure(json.getString("Identifacion"), json.getString("Nombre"));
+    } catch (Exception e) {
+      throw new IllegalArgumentException(e);
+    }
+    
+  }
+
+  public String resultWithCodeFromJSON (String JSONString) throws IllegalArgumentException {
+    try{
+      JSONArray jsonArray = new JSONArray(JSONString);
+      JSONObject json = jsonArray.getJSONObject(0);
+      return json.getString("Resultado");
+    } catch (Exception e) {
+      throw new IllegalArgumentException(e);
     }
   }
 
