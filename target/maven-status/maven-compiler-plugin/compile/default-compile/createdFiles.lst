@@ -1,0 +1,9 @@
+io/genobank/Main.class
+io/genobank/LaboratoryProcedure.class
+io/genobank/ConsoleColors.class
+io/genobank/PermitteeRepresentations.class
+io/genobank/Platform.class
+io/genobank/NotarizedCertificate.class
+io/genobank/PermitteeSigner.class
+io/genobank/Network.class
+io/genobank/LaboratoryProcedureResult.class
