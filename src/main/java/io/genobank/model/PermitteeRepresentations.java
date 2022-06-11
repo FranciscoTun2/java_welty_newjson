@@ -108,8 +108,12 @@ public class PermitteeRepresentations {
 
     // jsonVaccineData
     String regex2 = "^\\[\\{.*\\}\\]$";
-    if (!Pattern.matches(regex2, jsonVaccineData)) {
+
+    // if josnVaccineData is not empty
+    if (jsonVaccineData.length() > 0) {
+      if (!Pattern.matches(regex2, jsonVaccineData)) {
         throw new IllegalArgumentException("jsonVaccineData does not use required format");
+      }
     }
     this.jsonVaccineData = jsonVaccineData;
 
