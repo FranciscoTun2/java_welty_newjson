@@ -5,13 +5,13 @@ import java.net.URI;
 public enum Network {
   TEST(
     "io.genobank.test", 
-    "https://genobank.io/test/certificates/verify-certificate-v1.1#",
+    "https://genobank.io/test/certificates/verify-certificate-v1.1-disease#",
     "https://api-test.genobank.io/",
     "0x795faFFc58648e435E3bD3196C4F75F8EFc4b306"
     ),
   LOCAL(
     "io.genobank.test", 
-    "http://localhost:5500/test/certificates/verify-certificate-v1.1-json.html#",
+    "http://localhost:5500/test/certificates/verify-certificate-v1.1-disease.html#",
     "https://api-test.genobank.io/",
     "0x795faFFc58648e435E3bD3196C4F75F8EFc4b306"
     ),
