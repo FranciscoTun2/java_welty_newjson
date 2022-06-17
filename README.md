@@ -74,7 +74,7 @@ java -jar target/*.jar --test 'wrong outside clever wagon father insane boy junk
 ```
 
 ```sh
-java -jar target/*.jar --test 'wrong outside clever wagon father insane boy junk punch duck drift cupboard' 41 'LUIS SERGIO ORTEGA SOLARES' 150332505 'HEPATITIS' '{"Resultado":{"file":"",metodo":"RT-PCR Tiempo Real","antigeno":"POSITIVO","oxigenacion":"98","temperatura":"38","influenza-a-D":"POSITIVO","influenza-b-D":"POSITIVO","respiratorio-D":"POSITIVO"}}' '1' 1650917610932 ' {Pasaporte,LUIS SERGIO ORTEGA SOLARES,https://api.japso.com.mx/welty/api/public/fi/0e86f35b-487d-4bde-9412-90c71099abc7,150332505,1991-07-06}' '[{50,Primera Dosis,Astra Zeneca,NH0304,05/07/2021},{51,Segunda Dosis,Astra Zeneca,77761,10/09/2021}]' '{https://api.japso.com.mx/welty/api/public/ct/04168d10-778a-4f41-aeab-5b9fe592313c}'
+java -jar target/*.jar --test 'wrong outside clever wagon father insane boy junk punch duck drift cupboard' 41 'LUIS SERGIO ORTEGA SOLARES' 150332505 'HEPATITIS' '{"Resultado":{"file":"",metodo":"RT-PCR Tiempo Real","antigeno":"POSITIVO","oxigenacion":"98","temperatura":"38","influenza-a-D":"POSITIVO","influenza-b-D":"POSITIVO","respiratorio-D":"POSITIVO"}}' '1' 1650917610932 '{Pasaporte,LUIS SERGIO ORTEGA SOLARES,https://api.japso.com.mx/welty/api/public/fi/0e86f35b-487d-4bde-9412-90c71099abc7,150332505,1991-07-06}' '[{50,Primera Dosis,Astra Zeneca,NH0304,05/07/2021},{51,Segunda Dosis,Astra Zeneca,77761,10/09/2021}]' '{https://api.japso.com.mx/welty/api/public/ct/04168d10-778a-4f41-aeab-5b9fe592313c}'
 ```
 
 
@@ -88,7 +88,7 @@ java -jar target/*.jar --test 'wrong outside clever wagon father insane boy junk
 ```
 
 ```sh
-java -jar target/*.jar --test 'wrong outside clever wagon father insane boy junk punch duck drift cupboard' 41 'LUIS SERGIO ORTEGA SOLARES' 150332505 'HEPATITIS' '{"Resultado":{"file":"",metodo":"RT-PCR Tiempo Real","antigeno":"POSITIVO","oxigenacion":"98","temperatura":"38","influenza-a-D":"POSITIVO","influenza-b-D":"POSITIVO","respiratorio-D":"POSITIVO"}}' '1' 1650917610932 ' {Pasaporte,LUIS SERGIO ORTEGA SOLARES,https://api.japso.com.mx/welty/api/public/fi/0e86f35b-487d-4bde-9412-90c71099abc7,150332505,1991-07-06}' '' '{https://api.japso.com.mx/welty/api/public/ct/04168d10-778a-4f41-aeab-5b9fe592313c}'
+java -jar target/*.jar --test 'wrong outside clever wagon father insane boy junk punch duck drift cupboard' 41 'LUIS SERGIO ORTEGA SOLARES' 150332505 'HEPATITIS' '{"Resultado":{"file":"",metodo":"RT-PCR Tiempo Real","antigeno":"POSITIVO","oxigenacion":"98","temperatura":"38","influenza-a-D":"POSITIVO","influenza-b-D":"POSITIVO","respiratorio-D":"POSITIVO"}}' '1' 1650917610932 '{Pasaporte,LUIS SERGIO ORTEGA SOLARES,https://api.japso.com.mx/welty/api/public/fi/0e86f35b-487d-4bde-9412-90c71099abc7,150332505,1991-07-06}' '' '{https://api.japso.com.mx/welty/api/public/ct/04168d10-778a-4f41-aeab-5b9fe592313c}'
 ```
 
 
