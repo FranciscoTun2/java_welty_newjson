@@ -61,15 +61,8 @@ Run the product without arguments to see instructions
 java -jar target/*.jar --test
 ```
 
-Or include all required parameters to notarize a certificate
+Or include all required parameters to notarize a certificate. Here there are some examples:
 
-```sh
-java -jar target/*.jar --test 'wrong outside clever wagon father insane boy junk punch duck drift cupboard' 41 'Bob' '1234' '1' 'N' '' 1614069145429
-```
-<!-- Current command -->
-```sh
-java -jar target/*.jar --local 'wrong outside clever wagon father insane boy junk punch duck drift cupboard' 41 'LUIS SERGIO ORTEGA SOLARES' 150332505 '1' 'N' '1' 1650917610932 '{Pasaporte,LUIS SERGIO ORTEGA SOLARES,https://api.japso.com.mx/welty/api/public/fi/0e86f35b-487d-4bde-9412-90c71099abc7,150332505,1991-07-06}' '[{50,Primera Dosis,Astra Zeneca,NH0304,05/07/2021},{51,Segunda Dosis,Astra Zeneca,77761,10/09/2021}]' '{https://api.japso.com.mx/welty/api/public/ct/04168d10-778a-4f41-aeab-5b9fe592313c}'
-```
 
 <!-- New command -->
 ```sh
