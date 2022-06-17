@@ -65,16 +65,21 @@ Or include all required parameters to notarize a certificate. Here there are som
 
 
 <!-- New command -->
+Certificate with vaccination json:
+
 ```sh
 java -jar target/*.jar --test 'wrong outside clever wagon father insane boy junk punch duck drift cupboard' 41 'LUIS SERGIO ORTEGA SOLARES' 150332505 'PCR' '[{"Nombre": "Test test test","Identifacion": "1234567890 mx m 24","Clave_estudio": "1","Resultado": {"file": "","metodo": "RT-PCR Tiempo Real","antigeno": "POSITIVO","oxigenacion": "98","temperatura": "38","influenza-a-D": "POSITIVO","influenza-b-D": "POSITIVO","respiratorio-D": "POSITIVO"},"Metodo": "","Folio": "FMA-KLD-516","tiempo": 1654116966}]' '1' 1650917610932 '{Pasaporte,LUIS SERGIO ORTEGA SOLARES,https://api.japso.com.mx/welty/api/public/fi/0e86f35b-487d-4bde-9412-90c71099abc7,150332505,1991-07-06}' '[{50,Primera Dosis,Astra Zeneca,NH0304,05/07/2021},{51,Segunda Dosis,Astra Zeneca,77761,10/09/2021}]' '{https://api.japso.com.mx/welty/api/public/ct/04168d10-778a-4f41-aeab-5b9fe592313c}'
 ```
 
+
+Certificate without vaccination json:
 ```sh
 java -jar target/*.jar --test 'wrong outside clever wagon father insane boy junk punch duck drift cupboard' 41 'LUIS SERGIO ORTEGA SOLARES' 150332505 'PCR' '[{"Nombre": "Test test test","Identifacion": "1234567890 mx m 24","Clave_estudio": "1","Resultado": {"file": "","metodo": "RT-PCR Tiempo Real","antigeno": "POSITIVO","oxigenacion": "98","temperatura": "38","influenza-a-D": "POSITIVO","influenza-b-D": "POSITIVO","respiratorio-D": "POSITIVO"},"Metodo": "","Folio": "FMA-KLD-516","tiempo": 1654116966}]' '1' 1650917610932 '{Pasaporte,LUIS SERGIO ORTEGA SOLARES,https://api.japso.com.mx/welty/api/public/fi/0e86f35b-487d-4bde-9412-90c71099abc7,150332505,1991-07-06}' '' '{https://api.japso.com.mx/welty/api/public/ct/04168d10-778a-4f41-aeab-5b9fe592313c}'
 ```
 
 
 
+Other examples:
 ```sh
 java -jar target/*.jar --test 'wrong outside clever wagon father insane boy junk punch duck drift cupboard' 41 'LUIS SERGIO ORTEGA SOLARES' 150332505 'ANT' '[{"Nombre": "Test test test","Identifacion": "1234567890 mx m 24","Clave_estudio": "2","Resultado": {"metodo": "Inmunocromatografía / Nasofaríngeo","antigeno": "Negativo","oxigenacion": "98","temperatura": "38"},"Metodo": "","Folio": "FMA-KLD-516","tiempo": 1654116966}]' '1' 1650917610932 '{Pasaporte,LUIS SERGIO ORTEGA SOLARES,https://api.japso.com.mx/welty/api/public/fi/0e86f35b-487d-4bde-9412-90c71099abc7,150332505,1991-07-06}' '[{50,Primera Dosis,Astra Zeneca,NH0304,05/07/2021},{51,Segunda Dosis,Astra Zeneca,77761,10/09/2021}]' '{https://api.japso.com.mx/welty/api/public/ct/04168d10-778a-4f41-aeab-5b9fe592313c}'
 ```
