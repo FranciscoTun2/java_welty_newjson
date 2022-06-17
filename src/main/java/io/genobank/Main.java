@@ -17,7 +17,7 @@ public class Main {
       return;
     }
 
-    if (args.length == 10) {
+    if (args.length == 11) {
         // add new element to args
         args = new String[] {
             args[0],
@@ -66,7 +66,8 @@ public class Main {
       args[3], // Patient name
       args[4], // Patient passport
       args[5], // Laboratory procedure
-      LaboratoryProcedure.procedureWithCodeFromJSON(args[6]).resultWithCodeFromJSON(args[6]),
+      args[6], // Laboratory result
+      // LaboratoryProcedure.procedureWithCodeFromJSON(args[6]).resultWithCodeFromJSON(args[6]),
       args[7], // Serial
       Instant.ofEpochMilli(Long.parseLong(args[8])), // Time
       signer.permitteeId, // Permittee ID

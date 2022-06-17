@@ -82,6 +82,11 @@ public class PermitteeRepresentations {
     
     // Laboratory result
     java.util.Objects.requireNonNull(result);
+    String regexResult = "^\\{.*\\}$";
+
+    if (!Pattern.matches(regexResult, result)) {
+      throw new IllegalArgumentException("Laboratory result does not use required format");
+    }
     this.result = result;
     
     // Serial number
